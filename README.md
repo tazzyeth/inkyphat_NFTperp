@@ -1,7 +1,7 @@
 
 ![miladyeyespng](https://user-images.githubusercontent.com/132207345/235407693-9b1fa04c-4c45-4d5e-9f5b-19203c51fdcb.png)
 
-inkyphat_NFTperp is a Python script that fetches cryptocurrency data from the Kraken Exchange API and displays it on an InkyPHAT or InkyWHAT e-ink display hat for Raspberry Pi. The script can display the current price, low, high, and a historical price graph.
+inkyphat_NFTperp is a Python script that fetches cryptocurrency data from the Nftperp API and displays it on an InkyPHAT black display hat for Raspberry Pi. The script displays the mark price, the index price and a specific wallets PnL. You can add in more api calls from nftperp from here https://nftperp.readme.io/reference/mark-price.
 
 👌 Pre-requisites
 
