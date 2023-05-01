@@ -13,9 +13,9 @@ Inky library
 
 Clone this repository
 Install required libraries
+change the wallet address to the wallet you would like to see the PnL of (or watch mine)
 Run the script: python3 perpmilady.py
 Setup Cron to run the script every x minutes
-
 
 this is what it should look like once run
 
