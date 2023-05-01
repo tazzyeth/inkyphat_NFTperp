@@ -6,9 +6,13 @@ Inkyphat_NFTperp is a Python script that fetches cryptocurrency data from the nf
 👌 Pre-requisites
 
 Raspberry Pi with InkyPHAT Black display hat
+
 Python 3.x
+
 Inky library
+
 Pillow library
+
 Requests library
 
 🛸 Installation
