@@ -3,31 +3,65 @@
 
 Inkyphat_NFTperp is a Python script that fetches cryptocurrency data from the nftperp.xyz API and displays it on an InkyPHAT black display hat for Raspberry Pi. The script displays the mark price and index price for Milady and a specific wallets Profit and loss percentage. You can add in more api calls from nftperp from here https://nftperp.readme.io/reference/mark-price.
 
-👌 Pre-requisites
+👌## Pre-requisites
 
-Raspberry Pi with InkyPHAT Black display hat
+- Raspberry Pi with InkyPHAT Black display hat
+- Python 3.x
+- Inky library
+- Pillow library
+- Requests library
 
-Python 3.x
+If you haven't installed these libraries, you can install them by running the following commands
 
-Inky library
+```
+sudo apt-get install python3-pip
+sudo pip3 install inky Pillow requests
+```
 
-Pillow library
-
-Requests library
-
-🛸 Installation
+🛸 ## Installation
 
 1. Clone this repository
 
-2. Install required libraries
+```
+git clone https://github.com/<username>/Inkyphat_NFTperp.git
+```
+
+2. Navigate to the cloned repository
+
+```
+cd inkyphat-nftperp
+```
 
 3. Change the wallet address to the wallet you would like to see the PnL of (or watch mine)
 
-4. Run the script: python3 perpmilady.py
+![image](https://user-images.githubusercontent.com/132207345/235553130-11b43125-7141-4b74-a278-89c0fb0785a7.png)
+
+4. Run the script makling sure you are in the right directory
+
+```
+python3 perpmilady.py
+```
 
 5. Setup Cron to run the script every x minutes
+
+```
+crontab -e
+```
+
+6. Add the following line to your crontab file, replacing "x" with the number of minutes you want to wait between updates
+
+```
+*/x * * * * /usr/bin/python3 /home/pi/inkyphat-nftperp/perpmilady.py >> /home/pi/inkyphat-nftperp/cron.log 2>&1
+```
 
 
 This is what it should look like once run
 
 ![inkyphat-nftperp](https://user-images.githubusercontent.com/132207345/235453339-c0715fca-eee4-4ae8-a766-86c77977cd90.jpg)
+
+## Related links
+
+- [Inky](https://github.com/pimoroni/inky)
+- [Pillow](https://github.com/python-pillow/Pillow)
+- [Requests](https://github.com/psf/requests)
+- [nftperp API](https://nftperp.readme.io/reference/mark-price)
