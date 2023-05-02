@@ -1,7 +1,9 @@
+# Inkyphat_NFTperp
 
 ![miladyeyespng](https://user-images.githubusercontent.com/132207345/235407693-9b1fa04c-4c45-4d5e-9f5b-19203c51fdcb.png)
 
-Inkyphat_NFTperp is a Python script that fetches cryptocurrency data from the nftperp.xyz API and displays it on an InkyPHAT black display hat for Raspberry Pi. The script displays the mark price and index price for Milady and a specific wallets Profit and loss percentage. You can add in more api calls from nftperp from here https://nftperp.readme.io/reference/mark-price.
+Inkyphat_NFTperp is a Python script that fetches cryptocurrency data from the nftperp.xyz API and displays it on an InkyPHAT black display hat for Raspberry Pi. The script displays the mark price and index price for Milady and a specific wallet's Profit and Loss percentage. You can add more API calls from nftperp from [here](https://nftperp.readme.io/reference/mark-price).
+
 
 👌## Pre-requisites
 
