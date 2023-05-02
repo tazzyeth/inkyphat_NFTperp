@@ -5,7 +5,7 @@
 Inkyphat_NFTperp is a Python script that fetches cryptocurrency data from the nftperp.xyz API and displays it on an InkyPHAT black display hat for Raspberry Pi. The script displays the mark price and index price for Milady and a specific wallet's Profit and Loss percentage. You can add more API calls from nftperp from [here](https://nftperp.readme.io/reference/mark-price).
 
 
-👌## Pre-requisites
+## Pre-requisites 👌
 
 - Raspberry Pi with InkyPHAT Black display hat
 - Python 3.x
@@ -20,7 +20,7 @@ sudo apt-get install python3-pip
 sudo pip3 install inky Pillow requests
 ```
 
-🛸 ## Installation
+## Installation 🛸
 
 1. Clone this repository
 
