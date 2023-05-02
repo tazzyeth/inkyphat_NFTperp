@@ -22,44 +22,45 @@ sudo pip3 install inky Pillow requests
 
 ## Installation 🛸
 
-1. Clone this repository
+1. Clone this repository:
 
 ```
 git clone https://github.com/<username>/Inkyphat_NFTperp.git
 ```
 
-2. Navigate to the cloned repository
+2. Navigate to the cloned repository:
 
 ```
 cd inkyphat-nftperp
 ```
 
-3. Change the wallet address to the wallet you would like to see the PnL of (or watch mine)
+3. Change the wallet address to the wallet you would like to see the PnL of (or watch mine):
 
 ![image](https://user-images.githubusercontent.com/132207345/235553130-11b43125-7141-4b74-a278-89c0fb0785a7.png)
 
-4. Run the script makling sure you are in the right directory
+4. Run the script makling sure you are in the right directory:
 
 ```
 python3 perpmilady.py
 ```
 
-5. Setup Cron to run the script every x minutes
+5. Setup Cron to run the script every x minutes:
 
 ```
 crontab -e
 ```
 
 6. Add the following line to your crontab file, replacing "x" with the number of minutes you want to wait between updates.
-You will need to also input the working directory of the scrip and the username
+You will need to also input the working directory of the scrip and the username:
 
 ```
 * * * * * cd <enter-working-directory> && /usr/bin/python3.9 perpmilady2.py >> /home/<enter-username>/cron.log 2>&1
 
 ```
-To get the crontask to work you need to make sure all the directory information is correct. the last part of the code with create a log for you to troubleshoot whats happening on your main directory
+To get the crontask to work you need to make sure all the directory information is correct. 
+the last part of the code will create a log for you to troubleshoot whats happening on your main directory.
 
-This is what it should look like once run
+This is what it should look like once run:
 
 ![image](https://user-images.githubusercontent.com/132207345/235553724-c737a48e-8584-4946-af67-7fa53b0fde66.png)
 
