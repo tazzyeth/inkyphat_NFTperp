@@ -50,12 +50,14 @@ python3 perpmilady.py
 crontab -e
 ```
 
-6. Add the following line to your crontab file, replacing "x" with the number of minutes you want to wait between updates
+6. Add the following line to your crontab file, replacing "x" with the number of minutes you want to wait between updates.
+You will need to also input the working directory of the scrip and the username
 
 ```
-*/x * * * * /usr/bin/python3 /home/pi/inkyphat-nftperp/perpmilady.py >> /home/pi/inkyphat-nftperp/cron.log 2>&1
-```
+* * * * * cd <enter-working-directory> && /usr/bin/python3.9 perpmilady2.py >> /home/<enter-username>/cron.log 2>&1
 
+```
+To get the crontask to work you need to make sure all the directory information is correct. the last part of the code with create a log for you to troubleshoot whats happening on your main directory
 
 This is what it should look like once run
 
