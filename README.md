@@ -59,7 +59,7 @@ crontab -e
 
 This is what it should look like once run
 
-![inkyphat-nftperp](https://user-images.githubusercontent.com/132207345/235453339-c0715fca-eee4-4ae8-a766-86c77977cd90.jpg)
+![image](https://user-images.githubusercontent.com/132207345/235553724-c737a48e-8584-4946-af67-7fa53b0fde66.png)
 
 ## Related links
 
