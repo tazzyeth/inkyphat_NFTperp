@@ -11,7 +11,9 @@ inky_display = auto(ask_user=True, verbose=True)
 inky_display.set_border(inky_display.BLACK)
 
 # Load the font
-font = ImageFont.truetype("/home/tazzy/milady/Nationalyze-ALP.ttf", 20)
+font = ImageFont.truetype("/home/tazzy/milady/Nationalyze-ALP.ttf", 24)
+font2 = ImageFont.truetype("/home/tazzy/milady/fonts/Macaroni.ttf", 20)
+font3 = ImageFont.truetype("/home/tazzy/milady/fonts/chintzy.ttf", 20)
 
 # Load the Milady eyes image
 img_eyes = Image.open("miladyeyessmal.png")
@@ -22,8 +24,8 @@ img = Image.new("P", (inky_display.WIDTH, inky_display.HEIGHT))
 draw = ImageDraw.Draw(img)
 
 # Paste PNG images
-img.paste(img_eyes, (176, 50))
-img.paste(img_perp, (20, 0))
+img.paste(img_eyes, (176, 30))
+img.paste(img_perp, (10, -5))
 
 #draw.text((10, 60), "XO I LOVE MILADY XO", inky_display.BLACK, font)
 #draw.text((20, 30), "working hard everyday", inky_display.BLACK, font)
@@ -55,10 +57,11 @@ pnl_percent = float(data["result"][0]["pnlPercent"])
 
 
 # Draw the text on the inkyPHAT screen
-draw.text((10, 50), f"MP = {mprice:.2f}e", inky_display.BLACK, font)
-draw.text((10, 75), f"INP = {inprice:.2f}e", inky_display.BLACK, font)
-draw.text((100, 20), f"NFTperp", inky_display.BLACK, font)
-draw.text((10, 100), f"PnL = {pnl_percent:.2f}%", inky_display.BLACK, font)
+draw.text((10, 50), f"MARK = {mprice:.2f}e", inky_display.BLACK, font3)
+draw.text((10, 75), f"INDEX = {inprice:.2f}e", inky_display.BLACK, font3)
+draw.text((80, 5), f"NFTperp", inky_display.BLACK, font)
+draw.text((90, 30), f"Milady", inky_display.BLACK, font2)
+draw.text((10, 100), f"P'n'L = {pnl_percent:.2f}%", inky_display.BLACK, font3)
 
 # Display the image on the InkyPhat screen
 inky_display.set_image(img)
